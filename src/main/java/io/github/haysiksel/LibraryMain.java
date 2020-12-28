@@ -1,16 +1,20 @@
 package io.github.haysiksel;
 
+import lombok.Getter;
+
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class LibraryMain extends JavaPlugin {
 
+    @Getter private static LibraryMain instance;
+
     @Override
     public void onEnable() {
-        super.onEnable();
+        instance = this;
     }
 
     @Override
     public void onDisable() {
-        super.onDisable();
+        instance = null;
     }
 }
