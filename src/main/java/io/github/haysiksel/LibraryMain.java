@@ -22,7 +22,7 @@ public class LibraryMain extends JavaPlugin {
     @Override
     public void onDisable() {
         instance = null;
-        if (redisHandler != null) redisHandler.shutdown();
-        if (mongoHandler != null) mongoHandler.shutdown();
+        if (getConfig().getBoolean("database.redis.enabled")) redisHandler.shutdown();
+        if (getConfig().getBoolean("database.mongo-db.enabled")) mongoHandler.shutdown();
     }
 }
