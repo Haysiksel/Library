@@ -1,4 +1,4 @@
-package io.github.haysiksel;
+package com.github.haysiksel;
 
 class LibraryException extends Exception {
 

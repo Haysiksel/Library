@@ -1,4 +1,4 @@
-package io.github.haysiksel;
+package com.github.haysiksel;
 
 import org.jetbrains.annotations.NotNull;
 
