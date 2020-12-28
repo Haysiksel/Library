@@ -15,6 +15,8 @@ public class LibraryMain extends JavaPlugin {
     @Override
     public void onEnable() {
         instance = this;
+        getConfig().options().copyDefaults(true);
+        saveConfig();
         if (getConfig().getBoolean("database.redis.enabled")) this.redisHandler = new RedisHandler();
         if (getConfig().getBoolean("database.mongo-db.enabled")) this.mongoHandler = new MongoHandler();
     }
