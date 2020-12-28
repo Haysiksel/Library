@@ -1,0 +1,11 @@
+database:
+  mongo-db:
+    enabled: false
+    uri: ""
+  redis:
+    enabled: true
+    ip: ""
+    port: ""
+    auth:
+      enabled: false
+      password: ""

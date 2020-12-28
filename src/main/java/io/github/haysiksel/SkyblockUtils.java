@@ -3,11 +3,12 @@ package io.github.haysiksel;
 import lombok.experimental.UtilityClass;
 
 import org.bukkit.ChatColor;
+
 import org.jetbrains.annotations.NotNull;
 
 import java.text.DecimalFormat;
 
-import java.util.List;
+import java.util.Collection;
 import java.util.stream.Collectors;
 
 @UtilityClass
@@ -21,7 +22,7 @@ public class SkyblockUtils {
     }
 
     @NotNull
-    public List<String> colored(@NotNull List<String> list) {
+    public Collection<String> colored(@NotNull Collection<String> list) {
         return list.stream().map(SkyblockUtils::colored).collect(Collectors.toList());
     }
 
